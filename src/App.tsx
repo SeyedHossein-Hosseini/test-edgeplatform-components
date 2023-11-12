@@ -3,20 +3,21 @@ import DatePickerComponent from "./components/DatePickerComponent";
 import HelpUser from "./components/HelpUser";
 import HorizontalLinearStepper from "./components/LinearStepper";
 import VideoWebcamComponent from "./components/recordWebcam";
-import TheStepper from "./pages/Stepper.tsx/TheStepper";
+import TheStepper from "./pages/Stepper/TheStepper.tsx";
 
+import Stepper2 from './pages/Stepper2/Stepper.tsx'
 
 
 const App = () => {
   return (
     <>
-      <h1>Hello</h1>
       {/* <HorizontalLinearStepper /> */}
       {/* <CounterComponent /> */}
       {/* <VideoWebcamComponent /> */}
       {/* <DatePickerComponent /> */}
       {/* <HelpUser /> */}
-      <TheStepper />
+      {/* <TheStepper /> */}
+      <Stepper2 />
 
     </>
   )
