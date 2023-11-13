@@ -138,14 +138,14 @@ const VideoRecorder = () => {
                     ) : null}
                     {recordedVideo ? (
                         <div className="recorded-player">
-                            {/* <CardMedia
+                            <CardMedia
                                 component='video'
                                 image={recordedVideo}
                                 src={recordedVideo}
                                 width='300px'
                                 autoPlay
-                            /> */}
-                            <video className="recorded" src={recordedVideo} controls></video>
+                            />
+                            {/* <video className="recorded" src={recordedVideo} controls></video> */}
                             <a download href={recordedVideo}>
                                 Download Recording
                             </a>
