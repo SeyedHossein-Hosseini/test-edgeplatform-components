@@ -1,42 +1,13 @@
+import * as React from 'react';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
-import TakeWebcamImage from './takeWebcamImage'
-import UploadImage from './uploadImage';
-import { useState } from 'react';
-import { Button } from '@material-ui/core';
-import WebcamModal from './WebcamModal'
-
 
 export default function Form1() {
-    // 0 for none of the photo taking or photo uplaoding
-    const [getImageStatus, setGetImageStatus] = useState("")
-
-    const [userImg, setUserImg] = useState("")
-
-    const declareUploadOrTakePhoto = (stat: string) => {
-        setGetImageStatus(stat);
-    }
-
-    const onSetImageSrc = (imageSrc: any) => {
-        setUserImg(imageSrc)
-    }
-
     return (
-        <>
-
-            <img src={userImg} alt="" width="100px" />
-
-            <Grid item xs={12}>
-                <Button onClick={() => declareUploadOrTakePhoto("take")}>Take photo</Button>
-                <Button onClick={() => declareUploadOrTakePhoto("upload")}>Upload photo</Button>
-            </Grid>
-            {
-                getImageStatus === "take" ? (<WebcamModal setImageSrc={onSetImageSrc} />) : (<UploadImage />)
-
-            }
+        <React.Fragment>
             <Grid container spacing={3}>
                 <Grid item xs={12} sm={6}>
                     <TextField
@@ -129,7 +100,7 @@ export default function Form1() {
                         label="Use this address for payment details"
                     />
                 </Grid>
-            </Grid >
-        </>
+            </Grid>
+        </React.Fragment>
     );
 }
