@@ -8,13 +8,13 @@ import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import ID from './ID_take_upload_video';
+import ID from '../Stepper2/ID_take_upload_video';
 import VideoHelp from './Form2';
 import RecordVideo from './recordVideo';
 import ConfirmInformation from './Form4';
-import WebcamModal from './WebcamModal'
 
-const steps = ['Personal Information', 'Help Video', 'Record Video', 'webcam video', 'Confirm information'];
+
+const steps = ['Personal Information', 'Help Video', 'Record Video', 'Confirm information'];
 
 export default function Checkout() {
     const [activeStep, setActiveStep] = React.useState(0);
@@ -36,9 +36,7 @@ export default function Checkout() {
             case 2:
                 return <RecordVideo />;
             case 3:
-                return <ConfirmInformation />;
-            case 4:
-                return <WebcamModal />
+                return <ConfirmInformation />
             default:
                 throw new Error('Unknown step');
         }
@@ -46,6 +44,16 @@ export default function Checkout() {
 
     return (
         <React.Fragment>
+            {/* <AppBar
+                position="absolute"
+                color="default"
+                elevation={0}
+                sx={{
+                    position: 'relative',
+                    borderBottom: (t) => `1px solid ${t.palette.divider}`,
+                }}
+            >
+            </AppBar> */}
             <Container component="main" maxWidth="md" sx={{ mb: 4 }}>
                 <Paper variant="outlined" sx={{ my: { xs: 3, md: 6 }, p: { xs: 2, md: 3 } }}>
                     <Typography component="h1" variant="h4" align="center">
