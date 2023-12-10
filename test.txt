@@ -1,0 +1,7 @@
+this is a test from local branch test branch
+
+
+
+git push -u origin local-branch:new-remote-branch
+
+git branch --set-upstream-to=remotes/origin/main master
