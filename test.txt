@@ -1,2 +1,6 @@
 this is a test from local branch test branch
 local-test branch
+
+
+Push Local Branch to Remote Branch:\     
+git push origin local-test:remote-test 
