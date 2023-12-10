@@ -4,3 +4,6 @@ local-test branch
 
 Push Local Branch to Remote Branch:\     
 git push origin local-test:remote-test 
+
+
+local-test-2 is a sub branch of local-test
