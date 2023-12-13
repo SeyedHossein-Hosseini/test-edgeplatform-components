@@ -320,3 +320,13 @@ const {id, ...userWithoutID} = user;
 ### What is side effect in REACT ?  
   - everything(event) that happens out of React universe or react scope is a side effect. like change a global variable, call an API, make a https request, change DOM using js and localStorage are the events that are irrelated to Reactjs. 
   - handling side effects are done in useEffect hook in REACT. 
+
+
+---
+
+# Add the type of a new library in react.ts
+- If typescript complains about the type of a library in react.ts project, you should install the types of that library 
+  using the commnd below: 
+  `npm i -D @types/<name_of_library>`
+
+
